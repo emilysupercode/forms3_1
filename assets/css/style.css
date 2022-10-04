@@ -1,0 +1,154 @@
+/* =======================
+    general styling
+=========================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+@font-face {
+    font-family: 'AbyssinicaSIL-Regular';
+    src: url("../fonts/AbyssinicaSIL-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url("../fonts/Roboto-Regular.ttf");
+}
+
+h1,
+h2 {
+    font-family: 'AbyssinicaSIL-Regular', serif;
+}
+
+p,
+label,
+input {
+    font-family: 'Roboto-Regular', sans-serif;
+}
+
+/* =======================
+    assets
+#3381A0
+=========================*/
+
+/* =======================
+    header
+=========================*/
+section {
+    width: 30vw;
+    margin: 0 auto;
+    box-shadow: 0 0 50px 10px lightgrey;
+    border-radius: 10px;
+}
+
+div.top_banner {
+    margin-top: 5%;
+    background-color: #3381A0;
+    color: white;
+    padding: 5%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+/* =======================
+    main
+=========================*/
+h2 {
+    display: inline-block;
+}
+
+ol {
+    margin: 5px 5px;
+    list-style: none;
+    counter-reset: item;
+}
+
+li {
+    counter-increment: item;
+    margin-bottom: 5px;
+}
+
+li:before {
+    margin-left: -10px;
+    margin-right: 10px;
+    content: counter(item);
+    background: #3381A0;
+    border-radius: 100%;
+    color: white;
+    width: 1.2rem;
+    text-align: center;
+    display: inline-block;
+}
+
+/* https://stackoverflow.com/questions/23610151/can-you-style-ordered-list-numbers 
+consulted for styling the number in the ordered list*/
+
+li h2 {
+    color: #3381A0;
+}
+
+div.labels {
+    background-color: lightgray;
+    padding: 2vh 0;
+    width: 28vw;
+    margin: 1vh 0.5vw;
+}
+
+label {
+    padding: 1vh;
+}
+
+input[type="text"],
+textarea,
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+    width: 27vw;
+    margin: 5px;
+}
+
+/* =======================
+    footer
+=========================*/
+
+footer {
+    display: flex;
+    padding: 1vh 1vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer input[type="submit"] {
+    padding: 1vh 2vw;
+    background-color: #3381A0;
+    color: white;
+    border: white;
+    border-radius: 5px;
+}
+
+footer input[type="submit"]:hover {
+    background-color: #301C71;
+}
+
+/* footer input[type="submit"]:after {
+    border: blue;
+} */
+
+footer div {
+    display: flex;
+}
+
+footer p {
+    margin-left: 0.5vw;
+}
